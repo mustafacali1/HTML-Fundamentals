@@ -6,12 +6,51 @@
 </head>
 <body>
 <p>
-  Sayfa üzerinde bir takım verileri tablo halinde son kullanıcaya göstermek için kullanılan bir yapıdır. Web sayfamızında tablo yapısını oluşturmak için 'table' elementini kullanıyoruz. Tablo içerisinde 'th', 'tr, 'td kullanmaktadır. 'th' tabloda header anlamına gelmektedir. 'tr' ise tabloda bir satırı temsil ederken 'td' ise bir hücreyi temsil eder.
+  Sayfa üzerinde bir takım verileri tablo halinde son kullanıcıya göstermek için kullanılan bir yapıdır. Web sayfamızda tablo yapısını oluşturmak için 'table' elementini kullanıyoruz. Tablo içersinde 'th','tr','td' kullanılmaktadır. 'th' tabloda header anlamında gelmektedir.'tr'ise tabloda bir satırı temsil ederken 'td'ise bir hücreyi temsil eder.
 </p>
 <br>
 <ul>
-  <li><strong>width: </strong><i>Tablonun genişlik değerini vermek için kullanıyoruz.</i></li>
-  <li><strong>border: </strong><i>Tablonun iç ve dış çerçevesini belirler. 1 değeri verilirse çerçeve var, 0 verilirse çerçeve yok anlamına gelmektedir.</i></li>
+    <li> <strong> width: </strong> <i> Tablonun genişlik değerini vermek için kullanıyoruz.</i></li>
+    <li> <strong> border: </strong> <i> Tablonun iç ve dış çerçevesinin belirler.1 değeri verirlirse çerceve var,0 verilirse çerceve yok anlamına gelmektedir.</i></li>
+    <li> <strong> cellspacing: </strong> <i>Hücrelerin birbirkerşne olan uzaklığını belirler. </i></li>
+    <li> <strong> cellspadding: </strong> <i> Hücre içerisindeki verinin hücre çercevesine olan mesafesini belirler.</i></li>
+    <li> <strong> rowspan: </strong> <i>Satırların birleştirmye yarar </i></li>
+    <li> <strong> colspan1: </strong> <i> Hücreleri birleştirmeye yarar</i></li>
 </ul>
+<br>
+<table width="720px" border="1"cellspacing="5" cellpadding="5">
+    <thead>
+    <tr>
+        <th colspan="2"><h2> Sınıf Listesi</h2></th>
+    </tr>
+    <tr>
+        <th> Ad </th>
+        <th> Soyad </th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td>Mustafa</td>
+        <td>Cali</td>
+    </tr>
+    <tr>
+        <td>Hakan</td>
+        <td>Yılmaz</td>
+    </tr>
+    <tr>
+        <td>İpek</td>
+        <td>Yılmaz</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="2">
+            <strong style="float:right">Sınıf Mevcudu: 3</strong>
+        </td>
+    </tr>
+    </tfoot>
+</table>
 </body>
+
 </html>
